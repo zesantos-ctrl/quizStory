@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4f6fff, #1e2bb8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    animation: fadeIn 0.5s ease;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.app h1 {
+    color: #001e4d;
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+/* ---- STORY ---- */
+
+.story {
+    padding: 15px 0 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.story h2 {
+    font-size: 22px;
+    color: #1a2c70;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.story p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+/* ---- QUIZ ---- */
+
+.quiz h2 {
+    font-size: 20px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #f7f7f7;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding: 12px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn:hover:not([disabled]) {
+    background: #001e4d;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.btn:disabled {
+    cursor: no-drop;
+    opacity: 0.8;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 600;
+    width: 160px;
+    border: 0;
+    padding: 12px;
+    margin: 25px 0 0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.25s ease;
+}
+
+#next-btn:hover {
+    background: #0a2f8f;
+    transform: scale(1.05);
+}
+
+.correct {
+    background: #9aeabc !important;
+    border-color: #2ecc71;
+}
+
+.incorrect {
+    background: #ff9393 !important;
+    border-color: #e74c3c;
+}
